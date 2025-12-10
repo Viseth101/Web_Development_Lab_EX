@@ -11,45 +11,69 @@
 <body>
     <h1>Student Registration Form for Digital Yearbook</h1>
     <form method="post" action="test.php" name="myForm">
-        <div id="stuInfo">Please fill in the following details:<br><br>
-            First Name: <input type="text" name="firstName" required>
-            Last Name: <input type="text" name="lastName" required><br><br>
-            Nick Name: <input type="text" name="nickName"><br><br>
-            Student ID: <input type="text" name="studentID" pattern="[0-9]{9}" placeholder="9-digit ID"
-                required><br><br>
-            Date of Birth: <input type="date" name="dob" required><br><br>
-            Email: <input type="email" name="email"><br><br>
-            Phone Number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
-                required><br><br>
-            Gender:
-            <input type="radio" name="gender" value="male" required> Male
-            <input type="radio" name="gender" value="female" required> Female <br><br>
-            Faculty:
-            <select name="faculty" required>
-                <option value="science">Science</option>
-                <option value="engineering">Engineering</option>
-                <option value="business">Business</option>
-                <option value="arts">Arts</option>
-                <option value="law">Law</option>
-                <option value="medicine">Medicine</option>
-            </select><br><br>
-        </div>
+        Please fill in the following details:<br><br>
+        <table>
+            <tr>
+                <td>
+                    Student ID: <input type="text" name="studentID" pattern="[0-9]{9}" placeholder="9-digit ID"
+                        required>
 
-        <div id="stuHob">
-            Hobbies:
-            <select name="hobbies">
-                <option value="reading">Reading</option>
-                <option value="traveling">Traveling</option>
-                <option value="gaming">Gaming</option>
-                <option value="cooking">Cooking</option>
-                <option value="sports">Sports</option>
-                <option value="other">Other</option>
-            </select><br><br>
-            Message/Quote :<br>
-            <textarea name="message" rows="5" cols="30"></textarea><br><br>
-            <input type="reset" value="Clear">
-            <input type="submit" value="Send">
-        </div>
+                    First Name: <input type="text" name="firstName" size="15" required>
+                    Last Name: <input type="text" name="lastName" size="15" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nick Name: <input type="text" name="nickName">
+                    Date of Birth: <input type="date" name="dob" required>
+                    Gender:
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Faculty:
+                    <select name="faculty" required>
+                        <option value="science">Science</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="business">Business</option>
+                        <option value="arts">Arts</option>
+                        <option value="law">Law</option>
+                        <option value="medicine">Medicine</option>
+                    </select>
+                    Phone Number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="123-456-7890" required>
+                    Email: <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address: <textarea name="address" rows="3" cols="100%" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hobbies:
+                    <select name="hobbies">
+                        <option value="reading">Reading</option>
+                        <option value="traveling">Traveling</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="cooking">Cooking</option>
+                        <option value="sports">Sports</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                    Message/Quote :<br><br>
+                    <textarea name="message" rows="5" cols="100%"></textarea><br><br>
+                    <div style="text-align: center;">
+                        <input type="reset" value="Clear">
+                        <input type="submit" value="Send">
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
     </form>
 </body>
 
